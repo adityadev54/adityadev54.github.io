@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Confirmed - Bhaskar</title>
+    <title>Email Confirmed</title>
     <style>
         * {
             margin: 0;
@@ -12,61 +12,40 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: hsl(0 0% 98%);
+            min-height:  100vh;
+            display:  flex;
+            align-items:  center;
+            justify-content:  center;
             padding: 20px;
         }
 
-        .confirmation-card {
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        . card {
+            background: hsl(0 0% 100%);
+            border:  1px solid hsl(0 0% 89. 8%);
+            border-radius:  12px;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
             padding: 48px;
-            text-align: center;
-            max-width: 450px;
+            text-align:  center;
+            max-width:  400px;
             width: 100%;
-            animation: slideUp 0.6s ease-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .icon-container {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
-            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            background: hsl(142. 1 76.2% 36.3%);
+            border-radius:  50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 24px;
-            animation: scaleIn 0.5s ease-out 0.3s both;
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0);
-            }
-            to {
-                transform: scale(1);
-            }
         }
 
         .checkmark {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             stroke: white;
             stroke-width: 3;
             fill: none;
@@ -74,98 +53,29 @@
             stroke-linejoin: round;
         }
 
-        .checkmark-path {
-            stroke-dasharray: 50;
-            stroke-dashoffset: 50;
-            animation: drawCheck 0.5s ease-out 0.6s forwards;
-        }
-
-        @keyframes drawCheck {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-
         h1 {
-            color: #1f2937;
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .subtitle {
-            color: #6b7280;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 32px;
-        }
-
-        .email-display {
-            background: #f3f4f6;
-            border-radius: 8px;
-            padding: 12px 20px;
-            color: #374151;
-            font-size: 14px;
-            margin-bottom: 32px;
-            word-break: break-all;
-        }
-
-        .btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            padding: 14px 32px;
-            border-radius: 8px;
-            font-size: 16px;
+            color: hsl(0 0% 3.9%);
+            font-size: 24px;
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
+            letter-spacing: -0.025em;
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        .footer-text {
-            margin-top: 32px;
-            color: #9ca3af;
-            font-size: 14px;
-        }
-
-        .footer-text a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        .footer-text a:hover {
-            text-decoration: underline;
+        .description {
+            color: hsl(0 0% 45.1%);
+            font-size:  14px;
+            margin-top: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="confirmation-card">
+    <div class="card">
         <div class="icon-container">
             <svg class="checkmark" viewBox="0 0 40 40">
-                <path class="checkmark-path" d="M10 20 L17 27 L30 13"></path>
+                <path d="M10 20 L17 27 L30 13"></path>
             </svg>
         </div>
-        
-        <h1>Email Confirmed!</h1>
-        
-        <p class="subtitle">
-            Thank you for verifying your email address. Your account is now fully activated and ready to use.
-        </p>
-        
-        <div class="email-display">
-            your.email@example.com
-        </div>
-        
-        <a href="#" class="btn">Continue to Dashboard</a>
-        
-        <p class="footer-text">
-            Need help? <a href="#">Contact Support</a>
-        </p>
+        <h1>Email Confirmed</h1>
+        <p class="description">Your email has been verified successfully. </p>
     </div>
 </body>
 </html>
